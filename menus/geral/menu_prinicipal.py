@@ -16,7 +16,6 @@ Bem-vindo(a)!
 0 - Encerrar Sistema
 
 =========================================
-Escolha uma opção:
-""")
+Escolha uma opção: """)
 
     return opcao
