@@ -1,6 +1,5 @@
-from menus.cliente.menu_cadastro import exibir_menu_cadastro
+from menus.geral.navegar_cliente import navegar_cliente
 
+navegar_cliente = navegar_cliente()
 
-opcao = exibir_menu_cadastro()
-
-print(opcao)
+print(navegar_cliente)
