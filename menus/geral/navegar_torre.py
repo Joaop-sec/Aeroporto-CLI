@@ -1,4 +1,7 @@
 from menus.torre.menu_torre import exibir_menu_torre
+from menus.torre.menu_torre import monitorar_voos
+from menus.torre.menu_torre import gerenciar_pistas
+from menus.torre.menu_torre import comunicacao_com_pilotos
 
 def navegar_torre():
 
@@ -7,13 +10,13 @@ def navegar_torre():
         opcao = exibir_menu_torre()
 
         if opcao == '1':
-            print("Abrindo menu de voos...")
+            monitorar_voos()
 
         elif opcao == '2':
-            print("Abrindo menu de pistas...")
+            gerenciar_pistas()
 
         elif opcao == '3':
-            print("Abrindo menu de comunicação...")
+            comunicacao_com_pilotos()
 
         elif opcao == '0':
             break
