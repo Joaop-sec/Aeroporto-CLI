@@ -1,6 +1,6 @@
 def exibir_menu_cliente():
 
-    exibir_menu_cliente = input("""
+    opcao = input("""
 =========================================
           ÁREA DO CLIENTE
 =========================================
@@ -15,32 +15,40 @@ def exibir_menu_cliente():
 0 - Voltar
 
 =========================================
-Escolha uma opção: """)
-    return exibir_menu_cliente         
+Escolha uma opção:
+""")
+
+    return opcao
+
 
 def consultar_voos_disponiveis():
-    pass
+    print("\nConsultando voos disponíveis...")
+    input("\nPressione Enter para continuar...")
 
 
 def comprar_passagem():
-    pass
+    print("\nÁrea de compra de passagens...")
+    input("\nPressione Enter para continuar...")
 
 
 def visualizar_minhas_passagens():
-    pass
+    print("\nExibindo passagens do cliente...")
+    input("\nPressione Enter para continuar...")
 
 
 def consultar_status_voo():
-    pass
+    print("\nConsultando status do voo...")
+    input("\nPressione Enter para continuar...")
 
 
 def visualizar_historico_viagens():
-    pass
+    print("\nExibindo histórico de viagens...")
+    input("\nPressione Enter para continuar...")
 
 
 def atualizar_cadastro_cliente():
-    pass
-
+    print("\nAtualização de cadastro...")
+    input("\nPressione Enter para continuar...")
 
 
 

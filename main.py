@@ -18,10 +18,10 @@ while True:
     elif opcao == '3':
         navegar_torre()
 
-    elif opcao == '4'():
-        navegar_gerencia
+    elif opcao == '4':
+        navegar_gerencia()
 
-    elif opcao == '0'():
+    elif opcao == '0':
         print("\nEncerrando sistema...")
         break
 
