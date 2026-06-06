@@ -17,3 +17,18 @@ Escolha uma opção:
 """)
 
     return opcao
+
+def cadastrar_piloto():
+    pass
+
+def consultar_piloto():
+    pass
+
+def alterar_piloto():
+    pass
+
+def remover_piloto():
+    pass
+
+def listar_pilotos():
+    pass

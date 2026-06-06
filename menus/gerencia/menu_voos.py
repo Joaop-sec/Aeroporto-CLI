@@ -17,3 +17,15 @@ Escolha uma opção:
 """)
 
     return opcao
+
+def criar_voos():
+    pass
+
+def consultar_voo():
+    pass
+
+def editar_voo():
+    pass
+
+def cancelar_voo():
+    pass

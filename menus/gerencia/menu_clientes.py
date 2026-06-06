@@ -16,3 +16,19 @@ def exibir_menu_clientes():
 Escolha uma opção:
 """)
 
+    return opcao
+
+def cadastrar_cliente():
+    input("\nÁrea em construção...\n\nPressione Enter para voltar.")
+
+def consultar_cliente():
+    input("\nÁrea em construção...\n\nPressione Enter para voltar.")
+
+def atualizar_cliente():
+    input("\nÁrea em construção...\n\nPressione Enter para voltar.")
+
+def remover_cliente():
+    input("\nÁrea em construção...\n\nPressione Enter para voltar.")
+
+def listar_clientes():
+    input("\nÁrea em construção...\n\nPressione Enter para voltar.")

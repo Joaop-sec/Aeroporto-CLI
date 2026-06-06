@@ -18,10 +18,27 @@ Escolha uma opção: """)
 
 
 def consultar_voo_atual():
-    pass
 
+    opcao = input("""
+=========================================
+            VOO ATUAL
+=========================================
 
-def consultar_rota_voo():
+1 - Ver dados do voo
+2 - Ver rota planejada
+3 - Ver horário de partida
+4 - Ver horário de chegada
+5 - Ver passageiros embarcados
+
+0 - Voltar
+
+=========================================
+Escolha uma opção:
+""")
+
+    return opcao
+
+def consultar_rota():
     pass
 
 

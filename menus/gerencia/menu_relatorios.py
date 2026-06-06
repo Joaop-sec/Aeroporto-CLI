@@ -17,3 +17,15 @@ Escolha uma opção:
 """)
 
     return opcao
+
+def relatorio_voos():
+    pass
+
+def relatorio_clientes():
+    pass
+
+def relatorio_pilotos():
+    pass
+
+def relatorio_geral():
+    pass

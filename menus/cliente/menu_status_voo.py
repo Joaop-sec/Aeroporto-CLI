@@ -21,11 +21,3 @@ Escolha uma opção: """)
 def consultar_status_voo():
     pass
 
-def consultar_horario_partida():
-    pass
-
-def consultar_horario_chegada():
-    pass
-
-def consultar_portao_embarque():
-    pass

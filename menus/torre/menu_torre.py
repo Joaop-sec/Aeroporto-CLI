@@ -16,20 +16,10 @@ Escolha uma opção: """)
 
     return opcao
 
-
-
-
-
 def monitorar_voos():
-    print("\nMonitorando voos em andamento...")
-    input("\nPressione Enter para continuar...")
-
-
+    input("\nÁrea em construção...\n\nPressione Enter para voltar.")
 def gerenciar_pistas():
-    print("\nGerenciando pistas do aeroporto...")
-    input("\nPressione Enter para continuar...")
-
+    input("\nÁrea em construção...\n\nPressione Enter para voltar.")
 
 def comunicacao_com_pilotos():
-    print("\nAbrindo comunicação com os pilotos...")
-    input("\nPressione Enter para continuar...")
+    input("\nÁrea em construção...\n\nPressione Enter para voltar.")

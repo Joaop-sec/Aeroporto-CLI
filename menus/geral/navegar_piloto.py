@@ -23,7 +23,3 @@ def navegar_piloto():
 
         else:
             print("Opcão invalida")
-
-
-
-
