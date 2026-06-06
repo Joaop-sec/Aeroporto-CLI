@@ -16,7 +16,6 @@ def exibir_menu_cadastro():
 Escolha uma opção: """)
 
     return opcao
-
 def atualizar_cadastro_cliente():
     pass
 
