@@ -1,9 +1,9 @@
 from menus.cliente.menu_cliente import exibir_menu_cliente
-from menus.cliente.menu_cliente import consultar_voos_disponiveis
-from menus.cliente.menu_cliente import comprar_passagem
-from menus.cliente.menu_cliente import visualizar_minhas_passagens
-from menus.cliente.menu_cliente import consultar_status_voo
-from menus.cliente.menu_cliente import visualizar_historico_viagens
+from menus.cliente.menu_voos import consultar_voos_disponiveis
+from menus.cliente.menu_passagens import comprar_passagem
+from menus.cliente.menu_passagens import visualizar_minhas_passagens
+from menus.cliente.menu_voos import visualizar_detalhes_voo
+from menus.cliente.menu_historico import visualizar_historico_viagens
 from menus.cliente.menu_cliente import atualizar_cadastro_cliente
 
 def navegar_cliente():
@@ -23,7 +23,7 @@ def navegar_cliente():
             visualizar_minhas_passagens()
 
         elif opcao == '4':
-            consultar_status_voo()
+            visualizar_detalhes_voo()
 
         elif opcao == '5':
             visualizar_historico_viagens()

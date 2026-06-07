@@ -1,7 +1,7 @@
 from menus.piloto.menu_piloto import exibir_menu_piloto
-from menus.piloto.menu_piloto import consultar_voo_atual
-from menus.piloto.menu_piloto import comunicacao_com_torre
-from menus.piloto.menu_piloto import informacoes_aeronave
+from menus.piloto.menu_voo_atual import consultar_voo_atual
+from menus.piloto.menu_comunicacao import exibir_menu_comunicacao
+from menus.piloto.menu_aeronave import consultar_informacoes_aeronave
 
 def navegar_piloto():
 
@@ -13,10 +13,10 @@ def navegar_piloto():
             consultar_voo_atual()
 
         elif opcao == '2':
-            comunicacao_com_torre()
+            exibir_menu_comunicacao()
 
         elif opcao == '3':
-            informacoes_aeronave()
+            consultar_informacoes_aeronave()
 
         elif opcao == '0':
             break
