@@ -17,3 +17,14 @@ Escolha uma opção:
 """)
 
     return opcao
+
+def gerenciar_voos():
+    pass
+
+def gerenciar_clientes():
+    pass
+def gerenciar_pilotos():
+    pass
+
+def visualizar_relatorios():
+    pass
