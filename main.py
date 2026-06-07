@@ -1,7 +1,7 @@
 from menus.geral.menu_prinicipal import exibir_menu_principal
 
-from menus.geral.navegar_cliente import navegar_cliente
-from menus.geral.navegar_piloto import navegar_piloto
+from menus.geral.navegar_login_cliente import navegar_login_cliente
+from menus.geral.navegar_login_piloto import navegar_login_piloto
 from menus.geral.navegar_torre import navegar_torre
 from menus.geral.navegar_gerencia import navegar_gerencia
 
@@ -10,10 +10,10 @@ while True:
     opcao = exibir_menu_principal()
 
     if opcao == '1':
-        navegar_cliente()
+        navegar_login_cliente()
 
     elif opcao == '2':
-        navegar_piloto()
+        navegar_login_piloto()
 
     elif opcao == '3':
         navegar_torre()
