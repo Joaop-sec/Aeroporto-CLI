@@ -14,7 +14,4 @@ Bem-vindo(a)!
 =========================================
 """)
     
-    return opcao 
-
-
-
+    return opcao

@@ -15,8 +15,7 @@ def exibir_menu_cliente():
 0 - Voltar
 
 =========================================
-Escolha uma opção:
-""")
+Escolha uma opção: """)
     return opcao
 
 
