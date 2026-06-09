@@ -14,7 +14,6 @@ def navegar_cliente():
 
         if opcao == '1':
             consultar_voos_disponiveis()
-            
 
         elif opcao == '2':
             comprar_passagem()
