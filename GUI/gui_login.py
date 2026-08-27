@@ -2,13 +2,13 @@ from tkinter import *
 from tkinter import ttk
 
 
-def executar_janela_login():
-    login_window = Tk()
+def executar_janela_login(login_window):
+
     login_window.title("F22 - EXPRESS")
 
     login_window.geometry("900x600")
-    login_window.wm_maxsize(width=900, height=600)
-    login_window.wm_minsize(width=400, height=600)
+    #login_window.maxsize(width=900, height=600)
+    #login_window.minsize(width=400, height=600)
 
     login_window.configure(bg="white")
 
@@ -20,7 +20,11 @@ def executar_janela_login():
         fg="black",
         bg="white"
     )
-    logo.place(relx=0.5, rely=0.15, anchor=CENTER)
+    logo.place(
+        relx=0.5,
+        rely=0.15,
+        anchor=CENTER
+    )
 
 
     sub = Label(
@@ -30,19 +34,37 @@ def executar_janela_login():
         fg="black",
         bg="white"
     )
-    sub.place(relx=0.5, rely=0.30, anchor=CENTER)
+    sub.place(
+        relx=0.5,
+        rely=0.30,
+        anchor=CENTER
+    )
 
 
     subsub = Label(
         login_window,
-        text="Digite seu e-mail para se se inscrever no app",
-        font=("Arial", 12,),
+        text="Digite seu e-mail para se inscrever no app",
+        font=("Arial", 12),
         fg="black",
-        bg="White"
+        bg="white"
     )
-    subsub.place(relx=0.5, rely=0.35, anchor=CENTER)
+    subsub.place(
+        relx=0.5,
+        rely=0.35,
+        anchor=CENTER
+    )
 
-
-    login_window.mainloop()
+    subsub = Label(
+        login_window,
+        text="Digite seu e-mail para se inscrever no app",
+        font=("Arial", 12),
+        fg="black",
+        bg="white"
+    )
+    subsub.place(
+        relx=0.5,
+        rely=0.35,
+        anchor=CENTER
+    )
 
 
