@@ -18,10 +18,10 @@ Escolha uma opção: """)
     return opcao
 
 def comprar_passagem():
-    pass
+    pass #API, Banco de dados
 
 def visualizar_minhas_passagens():
-    pass
+    pass #Banco de dados
 
 def cancelar_passagem():
-    pass
+    pass #Banco de dados
