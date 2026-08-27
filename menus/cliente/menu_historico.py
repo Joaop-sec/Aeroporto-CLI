@@ -18,10 +18,10 @@ Escolha uma opção: """)
     return opcao
 
 def visualizar_historico_viagens():
-    pass
+    pass #Banco de dados
 
 def buscar_viagem_historico():
-    pass
+    pass #Banco de dados
 
 def visualizar_estatisticas_viagem():
-    pass
+    pass #Banco de dados

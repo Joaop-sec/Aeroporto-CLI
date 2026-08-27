@@ -17,13 +17,13 @@ Escolha uma opção: """)
 
     return opcao
 def atualizar_cadastro_cliente():
-    pass
+    pass #Banco de dados
 
 def atualizar_nome_cliente():
-    pass
+    pass #Banco de dados
 
 def atualizar_cpf_cliente():
-    pass
+    pass #Banco de dados
 
 def atualizar_documento_cliente():
-    pass
+    pass #Banco de dados
