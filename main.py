@@ -4,27 +4,27 @@ import threading
 import time
 import os
 
-import GUI.gui_login as gui_login
+import GUI.gui_home as gui_home
 
 
 root = tk.Tk()
 
-root.geometry("900x600")
+#root.geometry("900x600")
 root.title("F22 - EXPRESS")
 
 
 def carregar_interface():
 
-    global gui_login
+    global gui_home
 
     try:
 
-        importlib.reload(gui_login)
+        importlib.reload(gui_home)
 
         for widget in root.winfo_children():
             widget.destroy()
 
-        gui_login.executar_janela_login(root)
+        gui_home.executar_janela_login(root)
 
     except Exception as erro:
 
@@ -34,7 +34,7 @@ def carregar_interface():
 
 def observar_arquivo():
 
-    arquivo = "GUI/gui_login.py"
+    arquivo = "GUI/gui_home.py"
 
     ultima_modificacao = os.path.getmtime(arquivo)
 
