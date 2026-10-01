@@ -13,33 +13,86 @@ def executar_janela_login(login_window):
     login_window.configure(bg="white")
 
 
+
+
+    title = Label(
+        text="⌯✈︎ | F22 - EXPRESS",
+        font=("Ubuntu", 20, "bold"),
+        fg="black",
+        bg="white"
+    
+    )
+
+    title.place(
+        relx=0.5,
+        rely=0.10,
+        anchor=CENTER
+    )
+
+    title2 = Label(
+        text="                   Sistema de gerenciamento aereo",
+        font=("Arial", 8),
+        fg="black",
+        bg="white",
+    )
+
+    title2.place(
+        relx=0.5,
+        rely=0.14,
+        anchor=CENTER
+    )
+
+
+    line = Label(
+        text="───────────────────────────────────────────────────────────────",
+        font=("Arial", 12),
+        fg="black",
+        bg="white"
+    )
+
+    line.place(
+        relx=0.5,
+        rely=0.18,
+        anchor=CENTER
+    )
+
     logo = Label(
         login_window,
-        text="F22 - EXPRESS",
-        font=("Ubuntu", 26, "bold"),
+        text="👤 Área do Cliente",
+        font=("Ubuntu", 15, "bold"),
         fg="black",
         bg="white"
     )
     logo.place(
         relx=0.5,
-        rely=0.15,
+        rely=0.23,
         anchor=CENTER
     )
 
 
-    sub = Label(
+
+    sub1 = Label(
         login_window,
-        text="Acessar App",
-        font=("Arial", 14, "bold"),
+        text="Selecioe a opção no menu abaixo",
+        font=("Arial", 10,),
         fg="black",
         bg="white"
     )
-    sub.place(
+    sub1.place(
         relx=0.5,
         rely=0.30,
         anchor=CENTER
     )
 
+
+
+
+
+
+
+
+
+'''
 
     subsub = Label(
         login_window,
@@ -127,3 +180,4 @@ def executar_janela_login(login_window):
     )
 
 
+    '''
