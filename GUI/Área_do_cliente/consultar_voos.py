@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 
 
-def executar_janela_login(consultar_voos):
+def executar_janela_consultar_voos(consultar_voos):
 
     consultar_voos.title("F22 - EXPRESS")
     consultar_voos.geometry("600x500")
@@ -12,9 +12,9 @@ def executar_janela_login(consultar_voos):
     # ─────────────────── Configuração da janela ───────────────────
 
     consultar_voos.columnconfigure(0, weight=1)
-    consultar_voos.rowconfigure(0, weight=1)
-    consultar_voos.rowconfigure(1, weight=2)  # frame2 (menor, embaixo)
-
+    consultar_voos.rowconfigure(0, weight=0)
+    consultar_voos.rowconfigure(1, weight=1)  # frame2 (menor, embaixo)
+    consultar_voos.rowconfigure(2, weight=0)  # Botão voltar   
     # ─────────────────── Frame principal ───────────────────
 
     frame = Frame(
@@ -27,7 +27,7 @@ def executar_janela_login(consultar_voos):
         column=0,
         sticky="nsew",
         padx=30,
-        pady=20
+        pady=(20, 0)
     )
 
 
@@ -41,16 +41,22 @@ def executar_janela_login(consultar_voos):
 
     frame2 = Frame(
         consultar_voos,
-        bg="#D2D2D2"
+        bg="#D6D6D6",
     )
+
 
     frame2.grid(
         row=1,
         column=0,
         sticky="nsew",
-        padx=50, #BORDAS LATERAIS
-        pady=(1, 30)
+        padx=40, #BORDAS LATERAIS
+        pady=(1, 40) #BORDA DE BAIXO E CIMA
     )
+
+
+    frame2.columnconfigure(0, weight=1)
+    frame2.columnconfigure(1, weight=1)
+    frame2.columnconfigure(2, weight=1)
 
     # ─────────────────── Título ───────────────────
 
@@ -66,7 +72,8 @@ def executar_janela_login(consultar_voos):
         row=0,
         column=0,
         columnspan=3,
-        pady=(0, 5)
+        pady=(0, 5),
+        sticky="nsew"
     )
 
 
@@ -83,7 +90,8 @@ def executar_janela_login(consultar_voos):
     line1.grid(
         row=1,
         column=0,
-        columnspan=3
+        columnspan=3,
+        sticky="nsew"
     )
 
 
@@ -101,7 +109,8 @@ def executar_janela_login(consultar_voos):
         row=2,
         column=0,
         columnspan=3,
-        pady=(10, 2)
+        pady=(10, 2),
+        stick="nsew"
     )
 
 
@@ -119,7 +128,8 @@ def executar_janela_login(consultar_voos):
         row=3,
         column=0,
         columnspan=3,
-        pady=(0, 20)
+        pady=(0, 20),
+        stick="nsew"
     )
 
 
@@ -308,10 +318,75 @@ def executar_janela_login(consultar_voos):
     )
 
     voos_disponiveis.grid(
-        row=19,
+        row=10,
         column=0,
-        padx=9
+        padx=1,
+        sticky="nsew"
         
+    )
+
+# ─────────────────── Nenhum Voo Encontrado ───────────────────
+
+
+    aviao = Label(
+        frame2,
+        text="✈",
+        font=("Arial", 25),
+        fg="black",
+    )
+
+    aviao.grid(
+        row=1,
+        column=1,
+        pady=(2, 0)
+    )
+            
+
+    mensagem_principal = Label(
+        frame2,
+        text="Nenhum voo encontrado.",
+        font=("Arial"),
+        fg="black"
+    )
+
+    mensagem_principal.grid(
+        row=2,
+        column=1,
+        pady=(1, 0),
+        sticky="nsew"
+    )
+
+    sub_mensagem = Label(
+        frame2,
+        text="Tente ajustar os filtros da sua busca.",
+        font=("Arial, 8"),
+        fg="black",
+    )
+
+    sub_mensagem.grid(
+        row=3,
+        column=1,
+        pady=(0, 10),
+        stick="ew"
+    )
+
+
+# ─────────────────── Nenhum Voo Encontrado ───────────────────
+
+
+    botão_voltar = Button(
+        consultar_voos,
+        text=("← Voltar"),
+        font=("Arial", 13),
+        fg="white"
+    )
+
+    botão_voltar.grid(
+        row=2,
+        column=0,
+        sticky="ns",
+        padx=40,
+        pady=(0, 15)
     )
 
 
@@ -319,13 +394,7 @@ def executar_janela_login(consultar_voos):
 
 
 
-
-
-        
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    janela = Tk()
+    executar_janela_consultar_voos(janela)
+    janela.mainloop()

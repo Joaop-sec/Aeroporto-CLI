@@ -127,3 +127,12 @@ def executar_janela_login(login_window):
     )
 
 
+
+
+
+
+
+if __name__ == "__main__":
+    janela = Tk()
+    executar_janela_login(janela)
+    janela.mainloop()
