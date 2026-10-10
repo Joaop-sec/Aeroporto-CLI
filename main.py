@@ -4,7 +4,7 @@ import threading
 import time
 import os
 
-import GUI.Área_do_cliente.consultar_voos as consultar_voos
+import GUI.Área_do_cliente.gui_home as gui_home
 
 
 root = tk.Tk()
@@ -17,16 +17,16 @@ root.title("F22 - EXPRESS")
 
 def carregar_interface():
 
-    global consultar_voos
+    global gui_home
 
     try:
 
-        importlib.reload(consultar_voos)
+        importlib.reload(gui_home)
 
         for widget in root.winfo_children():
             widget.destroy()
 
-        consultar_voos.executar_janela_login(root)
+        gui_home.executar_janela_home(root)
 
     except Exception as erro:
 
@@ -36,7 +36,7 @@ def carregar_interface():
 
 def observar_arquivo():
 
-    arquivo = "GUI/Área_do_cliente/consultar_voos.py"
+    arquivo = "GUI/Área_do_cliente/gui_home.py"
 
     ultima_modificacao = os.path.getmtime(arquivo)
 

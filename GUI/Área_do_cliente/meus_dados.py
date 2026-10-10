@@ -193,3 +193,13 @@ def executar_janela_login(meus_dados):
         rely=0.90,
         anchor=CENTER
     )
+
+
+
+
+
+
+if __name__ == "__main__":
+    janela = Tk()
+    executar_janela_login(janela)
+    janela.mainloop()
