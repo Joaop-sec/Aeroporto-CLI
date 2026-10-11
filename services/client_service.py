@@ -22,4 +22,5 @@ def realizar_login_cliente(cpf):
             return cliente
         
     return None
+
       
