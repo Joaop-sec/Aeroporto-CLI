@@ -3,7 +3,10 @@ from tkinter import ttk
 
 def executar_janela_home(janela_home): 
     
-    
+    # Remove os widgets da tela anterior
+    for widget in janela_home.winfo_children():
+        widget.destroy()
+
     
     janela_home.title("F22 - EXPRESS")
     janela_home.geometry("600x500")

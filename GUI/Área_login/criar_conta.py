@@ -86,7 +86,7 @@ def executar_gui_cadastro(janela):
         pady=(0, 22)
     )
 
-    # ─────────────────── Função placeholder ───────────────────
+# ─────────────────── Função placeholder ───────────────────
 
     def adicionar_placeholder(campo, texto, senha=False):
 
@@ -112,7 +112,7 @@ def executar_gui_cadastro(janela):
         campo.bind("<FocusIn>", ao_entrar)
         campo.bind("<FocusOut>", ao_sair)
 
-    # ─────────────────── Campo nome ───────────────────
+# ─────────────────── Campo nome ───────────────────
 
     campo_nome = Entry(
         frame_principal,
@@ -137,7 +137,7 @@ def executar_gui_cadastro(janela):
         "  Nome completo"
     )
 
-    # ─────────────────── Campo e-mail ───────────────────
+# ─────────────────── Campo e-mail ───────────────────
 
     campo_email = Entry(
         frame_principal,
@@ -162,7 +162,7 @@ def executar_gui_cadastro(janela):
         "  E-mail"
     )
 
-    # ─────────────────── Campo senha ───────────────────
+# ─────────────────── Campo senha ───────────────────
 
     campo_senha = Entry(
         frame_principal,
@@ -188,7 +188,7 @@ def executar_gui_cadastro(janela):
         senha=True
     )
 
-    # ─────────────────── Confirmar senha ───────────────────
+# ─────────────────── Confirmar senha ───────────────────
 
     campo_confirmar_senha = Entry(
         frame_principal,
@@ -214,7 +214,7 @@ def executar_gui_cadastro(janela):
         senha=True
     )
 
-    # ─────────────────── Criar conta ───────────────────
+# ─────────────────── Criar conta ───────────────────
 
     def criar_conta():
 
@@ -224,8 +224,7 @@ def executar_gui_cadastro(janela):
         confirmar_senha = campo_confirmar_senha.get()
 
         # Impedir que os placeholders sejam enviados
-        if (
-            nome in ("", "  Nome completo")
+        if (nome in ("", "  Nome completo")
             or email in ("", "  E-mail")
             or senha in ("", "  Crie uma senha")
             or confirmar_senha in ("", "  Confirme sua senha")
@@ -239,6 +238,10 @@ def executar_gui_cadastro(janela):
 
         print("Dados preenchidos corretamente!")
         print("Próximo passo: cadastrar no banco de dados.")
+
+# ─────────────────── Botão criar conta ───────────────────
+
+
 
     botao_criar = Button(
         frame_principal,
@@ -262,7 +265,7 @@ def executar_gui_cadastro(janela):
         ipady=8
     )
 
-    # ─────────────────── Área inferior ───────────────────
+# ─────────────────── Área inferior ───────────────────
 
     frame_login = Frame(
         frame_principal,
@@ -288,11 +291,9 @@ def executar_gui_cadastro(janela):
         column=0
     )
 
- # ─────────────────── Link para login ───────────────────
+ # ─────────────────── Link - Login <-- Criar conta ───────────────────
 
-    def voltar_login(event):
-        from GUI.Área_login.entrar import executar_gui_login
-        executar_gui_login(janela)
+    from GUI_conexões.criar_conta__entrar import voltar_login
 
     link_login = Label(
         frame_login,
@@ -311,8 +312,7 @@ def executar_gui_cadastro(janela):
 
     link_login.bind(
         "<Button-1>",
-        voltar_login
-    )
+        lambda event: voltar_login(event, janela))
 
 
 

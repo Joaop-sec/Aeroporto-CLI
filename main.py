@@ -229,7 +229,7 @@ def carregar_interface():
 
 def observar_arquivo():
 
-    arquivo = "GUI/Área_do_cliente/gui_login.py"
+    arquivo = "GUI/Área_login/entrar.py"
 
     ultima_modificacao = os.path.getmtime(arquivo)
 
