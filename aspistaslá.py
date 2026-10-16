@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS pistas (
 )
 """)
 
-# Inserir dados (apenas pistas com coordenadas válidas)
 for _, row in df.iterrows():
     if pd.isna(row['le_latitude_deg']) or pd.isna(row['le_longitude_deg']):
         continue
