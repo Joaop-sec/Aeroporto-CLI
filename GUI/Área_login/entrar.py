@@ -164,10 +164,9 @@ def executar_gui_login(janela):
         senha=True
     )
 
-    # ─────────────────── Botão entrar ───────────────────
+# ─────────────────── Botão entrar ───────────────────
 
-    def entrar():
-        print("Realizar login")
+    from GUI_conexões.botões_entrar__home import mudar_janela
 
     botao_entrar = Button(
         frame_principal,
@@ -179,7 +178,7 @@ def executar_gui_login(janela):
         activeforeground="white",
         relief="flat",
         cursor="hand2",
-        command=entrar
+        command=lambda: mudar_janela(janela)
     )
 
     botao_entrar.grid(
@@ -306,14 +305,9 @@ def executar_gui_login(janela):
         column=0
     )
 
-    # ─────────────────── Link Cadastre-se ───────────────────
+# ─────────────────── Link: Login --> Criar conta  ───────────────────
 
-    def abrir_cadastro(event):
-        from GUI.Área_login.criar_conta import executar_gui_cadastro
-        executar_gui_cadastro(janela)
-
-
-
+    from GUI_conexões.criar_conta__entrar import abrir_cadastro
 
     criar_conta = Label(
         frame_cadastro,
@@ -332,7 +326,7 @@ def executar_gui_login(janela):
 
     criar_conta.bind(
         "<Button-1>",
-        abrir_cadastro
+        lambda event: abrir_cadastro(event, janela)
     )
 
 
@@ -340,12 +334,3 @@ def executar_gui_login(janela):
 
 
 
-
-
-
-
-
-if __name__ == "__main__":
-    janela = Tk()
-    executar_gui_login(janela)
-    janela.mainloop()
