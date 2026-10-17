@@ -190,13 +190,6 @@ def executar_gui_login(janela):
         ipady=8
     )
 
-    
-
-
-
-
-    
-
     # ─────────────────── Divisória ───────────────────
 
     frame_divisoria = Frame(

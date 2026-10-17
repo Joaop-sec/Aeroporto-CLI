@@ -9,7 +9,7 @@ def executar_janela_home(janela_home):
 
     
     janela_home.title("F22 - EXPRESS")
-    janela_home.geometry("600x500")
+    #janela_home.geometry("600x500")
     janela_home.configure(bg="white")
 
 # ─────────────────── Configuração da janela ───────────────────
@@ -185,13 +185,15 @@ def executar_janela_home(janela_home):
 
 # ─────────────────── Botão "Sobre Nós" ───────────────────
 
+    from GUI_conexões.home__sobre_nos import home__sobre_nos
+
     botão_sobre_nós = Button(
         frame_destaque,
         text="ⓘ Sóbre nós",
         font=("Ubuntu", 11, "bold"),
         fg="white",
-        bg="black"
-        
+        bg="black",
+        command=lambda: home__sobre_nos(janela_home)
      )
  
     botão_sobre_nós.grid(

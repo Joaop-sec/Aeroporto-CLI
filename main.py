@@ -255,3 +255,76 @@ threading.Thread(
 carregar_interface()
 
 root.mainloop()
+'''
+# ─────────────────── Sobre nós ───────────────────
+
+import GUI.Área_do_cliente.sobre_nós as executar_janela_sobre_nos 
+
+
+root = tk.Tk()
+
+#root.geometry("900x600")
+
+#root.resizable(False, False)
+root.title("F22 - EXPRESS")
+
+
+def carregar_interface():
+
+    global executar_janela_sobre_nos
+
+    try:
+
+        importlib.reload(executar_janela_sobre_nos)
+
+        for widget in root.winfo_children():
+            widget.destroy()
+
+        executar_janela_sobre_nos.executar_janela_sobre_nos(root)
+
+    except Exception as erro:
+
+        print("Erro ao atualizar:")
+        print(erro)
+
+
+def observar_arquivo():
+
+    arquivo = "GUI/Área_do_cliente/sobre_nós.py"
+
+    ultima_modificacao = os.path.getmtime(arquivo)
+
+    while True:
+
+        time.sleep(0.5)
+
+        nova_modificacao = os.path.getmtime(arquivo)
+
+        if nova_modificacao != ultima_modificacao:
+
+            ultima_modificacao = nova_modificacao
+
+            root.after(0, carregar_interface)
+
+
+threading.Thread(
+    target=observar_arquivo,
+    daemon=True
+).start()
+
+
+carregar_interface()
+
+root.mainloop()
+
+'''
+
+
+
+
+
+
+
+
+
+
