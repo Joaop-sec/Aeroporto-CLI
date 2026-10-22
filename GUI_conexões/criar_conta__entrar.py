@@ -12,8 +12,5 @@ def abrir_cadastro(event, janela):
 
 # ─────────────────── Link: Login <-- Criar conta ───────────────────
 
-from GUI.Área_login.entrar import executar_gui_login
-
-
 def voltar_login(event, janela):
     executar_gui_login(janela)

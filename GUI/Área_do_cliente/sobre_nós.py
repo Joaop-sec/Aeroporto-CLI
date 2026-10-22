@@ -105,7 +105,7 @@ def executar_janela_sobre_nos(janela_sobre):
 
     conteudo = Frame(
         documento,
-        bg=BRANCO,
+        bg="red",
         padx=30,
         pady=28
     )
@@ -481,12 +481,15 @@ def executar_janela_sobre_nos(janela_sobre):
 
     # ─────────────────── Botão voltar ───────────────────
 
+    from GUI_conexões.home__sobre_nos import voltar_botao
+
     botao_voltar = Button(
         conteudo,
         text="Sair",
         font=("Arial", 11, "bold"),
         fg="black",
-        bg="white"
+        bg="white",
+        command=lambda: voltar_botao(janela_sobre)
     )
 
     botao_voltar.grid(
@@ -495,6 +498,7 @@ def executar_janela_sobre_nos(janela_sobre):
         sticky="e",
         pady=(0, 20)
     )
+
 
     # ─────────────────── Rodapé fixo ───────────────────
 
