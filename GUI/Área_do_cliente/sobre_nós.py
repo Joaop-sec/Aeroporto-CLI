@@ -499,7 +499,6 @@ def executar_janela_sobre_nos(janela_sobre):
         pady=(0, 20)
     )
 
-
     # ─────────────────── Rodapé fixo ───────────────────
 
     rodape = Frame(janela_sobre, bg=BRANCO)

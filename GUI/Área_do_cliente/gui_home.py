@@ -236,7 +236,6 @@ def executar_janela_home(janela_home):
         ipady=15
     )
 
-
 # ─────────────────── Opc2 - Minhas reservas ───────────────────
 
 
